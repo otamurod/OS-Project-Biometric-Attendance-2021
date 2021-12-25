@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc -export-dynamic -Wall `pkg-config --cflags --libs gtk+-3.0` client.c -ljson-c -o client `pkg-config --cflags --libs gtk+-3.0`
+./client
